@@ -12,7 +12,6 @@ module.exports = {
     },
   },
 
-  // Set up ESLint for .js / .jsx files
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
