@@ -15,10 +15,8 @@ const CarouselContainer = styled.div`
 `;
 
 const Carousel = styled.div`
-  //   height: 10000px;
   display: flex;
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
@@ -80,7 +78,7 @@ const Post = ({ post }) => {
   const handlePrevClick = () => {
     if (carouselRef.current) {
       carouselRef.current.scrollBy({
-        left: -300,
+        left: -70,
         behavior: 'smooth',
       });
     }
