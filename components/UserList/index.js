@@ -2,27 +2,29 @@ import React, { Component } from 'react';
 import styled from '@emotion/styled';
 import axios from 'axios';
 
-const Table = styled.table`
-  width: 100%;
-  border-collapse: collapse;
+const Table = styled.table(() => ({
+  width: '100%',
+  borderCollapse: 'collapse',
 
-  th,
-  td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
+  th: {
+    border: '1px solid #ddd',
+    padding: '8px',
+    textAlign: 'left',
+    backgroundColor: '#f2f2f2',
+    cursor: 'pointer',
+  },
 
-  th {
-    background-color: #f2f2f2;
-    cursor: pointer;
-  }
+  td: {
+    border: '1px solid #ddd',
+    padding: '8px',
+    textAlign: 'left',
+  },
 
-  .sort-icon {
-    vertical-align: middle;
-    margin-left: 5px;
-  }
-`;
+  '.sort-icon': {
+    verticalAlign: 'middle',
+    marginLeft: '5px',
+  },
+}));
 
 const columnFields = [
   { value: 'id', label: 'Id' },

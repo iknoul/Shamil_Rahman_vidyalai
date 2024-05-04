@@ -5,11 +5,11 @@ import Post from './Post';
 import Container from '../common/Container';
 import useWindowWidth from '../hooks/useWindowWidth';
 
-const PostListContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
+const PostListContainer = styled.div(() => ({
+  display: 'flex',
+  flexWrap: 'wrap',
+  justifyContent: 'center',
+}));
 
 const LoadMoreButton = styled.button(() => ({
   padding: '10px 20px',

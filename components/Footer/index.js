@@ -1,46 +1,46 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const FooterContainer = styled.footer`
-  background-color: #333;
-  color: #fff;
-  margin-top: auto;
-`;
+const FooterContainer = styled('footer')(() => ({
+  backgroundColor: '#333',
+  color: '#fff',
+  marginTop: 'auto',
+}));
 
-const FooterContent = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+const FooterContent = styled('div')(() => ({
+  maxWidth: '1200px',
+  margin: '0 auto',
+  padding: '20px 20px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+}));
 
-const FooterLinks = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 20px;
-`;
+const FooterLinks = styled('div')(() => ({
+  display: 'flex',
+  justifyContent: 'space-between',
+  width: '100%',
+  marginTop: '20px',
+}));
 
-const FooterLink = styled.a`
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
+const FooterLink = styled('a')(() => ({
+  color: '#fff',
+  textDecoration: 'none',
+  transition: 'color 0.3s ease',
 
-  &:hover {
-    color: #ccc;
-  }
-`;
+  '&:hover': {
+    color: '#ccc',
+  },
+}));
 
-const CompanyName = styled.div`
-  margin-top: 20px;
-`;
+const CompanyName = styled('div')(() => ({
+  marginTop: '20px',
+}));
 
-const Divider = styled.span`
-  color: #777;
-  margin: 0 10px;
-`;
+const Divider = styled('span')(() => ({
+  color: '#777',
+  margin: '0 10px',
+}));
 
 const Footer = () => {
   return (
