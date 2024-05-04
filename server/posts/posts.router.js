@@ -1,6 +1,6 @@
 const express = require('express');
 const { fetchPosts } = require('./posts.service');
-const { fetchUser } = require('../users/users.service');
+const { fetchUserById } = require('../users/users.service');
 
 const router = express.Router();
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import Posts from '../components/Posts';
 import Footer from '../components/Footer';
 import TopNavbar from '../components/Navbar';
+import UserList from '../components/UserList';
 
 export default function HomePage() {
   return (
@@ -14,7 +14,7 @@ export default function HomePage() {
           margin: '60px 0px 20px',
         }}
       >
-        <Posts />
+        <UserList />
       </div>
       <Footer />
     </div>

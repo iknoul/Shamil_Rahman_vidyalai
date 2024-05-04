@@ -2,6 +2,7 @@ const express = require('express');
 const next = require('next');
 const morgan = require('morgan');
 const postRoutes = require('./posts/posts.router');
+const userRoutes = require('./users/users.router');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
@@ -15,6 +16,7 @@ app
     server.use(morgan('tiny'));
 
     server.use('/api/v1/posts', postRoutes);
+    server.use('/api/v1/users', userRoutes);
 
     server.get('*', (req, res) => {
       return handle(req, res);

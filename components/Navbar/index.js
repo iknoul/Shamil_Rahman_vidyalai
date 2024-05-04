@@ -4,7 +4,6 @@ import styled from '@emotion/styled';
 const Navbar = styled.nav`
   background-color: #333;
   color: #fff;
-  padding: 15px 20px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -30,28 +29,18 @@ const Link = styled.a`
 
 const TopNavbar = () => {
   return (
-    <Navbar>
-      <ul
-        style={{
-          listStyleType: 'none',
-          margin: 0,
-          padding: 0,
-        }}
-      >
-        <ListItem>
-          <Link href="#">Home</Link>
-        </ListItem>
-        <ListItem>
-          <Link href="#">About</Link>
-        </ListItem>
-        <ListItem>
-          <Link href="#">Services</Link>
-        </ListItem>
-        <ListItem>
-          <Link href="#">Contact</Link>
-        </ListItem>
-      </ul>
-    </Navbar>
+    <div>
+      <Navbar>
+        <ul style={{}}>
+          <ListItem>
+            <Link href={'/'}>Home</Link>
+          </ListItem>
+          <ListItem>
+            <Link href={'/users'}>Users</Link>
+          </ListItem>
+        </ul>
+      </Navbar>
+    </div>
   );
 };
 
