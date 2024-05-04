@@ -10,9 +10,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## TASKS
 
-[] fix carousel UI and make the carousel navigation buttons center horizontally to the image
-[] replace dummy images with "https://jsonplaceholder.typicode.com/albums/1/photos" in /api/v1/posts route
-[] make top nav bar sticky on scroll
-[] load more post on clicking "Load More" button, and "Load More" button if no post exist
-[] fix overflow issues in home page
-[] set contextAPI to convert global light and dark mode
+- [ ] fix carousel UI and make the carousel navigation buttons center horizontally to the image
+- [ ] replace dummy images with "https://jsonplaceholder.typicode.com/albums/1/photos" in /api/v1/posts route
+- [ ] make top nav bar sticky on scroll
+- [ ] load more post on clicking "Load More" button, and hide "Load More" button if no post exist
+- [ ] fix overflow issues in home page
+- [ ] set contextAPI to convert global light and dark mode
+- [ ] show user's name and email in each posts and show first letter for first and last name

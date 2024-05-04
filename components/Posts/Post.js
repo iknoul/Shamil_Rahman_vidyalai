@@ -41,6 +41,9 @@ const Image = styled.img`
 
 const Content = styled.div`
   padding: 10px;
+  & > h2 {
+    margin-bottom: 16px;
+  }
 `;
 
 const Button = styled.button`

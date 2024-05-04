@@ -1,11 +1,12 @@
 const express = require('express');
 const next = require('next');
+const morgan = require('morgan');
+const postRoutes = require('./posts/posts.router');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
+
 const handle = app.getRequestHandler();
-const postRoutes = require('./posts/posts.router');
-const morgan = require('morgan');
 
 app
   .prepare()
