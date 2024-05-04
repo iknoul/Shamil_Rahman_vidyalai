@@ -25,6 +25,4 @@ router.get('/', async (req, res) => {
   res.json(postsWithImages);
 });
 
-// TODO: implement a poor group post by user function
-// router.get('/user/:id')
 module.exports = router;

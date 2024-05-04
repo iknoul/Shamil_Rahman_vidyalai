@@ -3,10 +3,12 @@ import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import Post from './Post';
 import Container from '../common/Container';
+import useWindowWidth from '../hooks/useWindowWidth';
 
 const PostListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const LoadMoreButton = styled.button(() => ({
@@ -34,16 +36,18 @@ export default function Posts() {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
+  const { isSmallerDevice } = useWindowWidth();
+
   useEffect(() => {
     const fetchPost = async () => {
       const { data: posts } = await axios.get('/api/v1/posts', {
-        params: { start: 0, limit: 10 },
+        params: { start: 0, limit: isSmallerDevice ? 5 : 10 },
       });
       setPosts(posts);
     };
 
     fetchPost();
-  }, []);
+  }, [isSmallerDevice]);
 
   const handleClick = () => {
     setIsLoading(true);

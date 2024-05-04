@@ -33,7 +33,6 @@ const columnFields = [
   { value: 'website', label: 'Website' },
 ];
 
-// Higher Order Component for fetching and filtering data
 const withUserData = WrappedComponent =>
   class WithUserData extends Component {
     state = {

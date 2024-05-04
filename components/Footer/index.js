@@ -4,7 +4,6 @@ import styled from '@emotion/styled';
 const FooterContainer = styled.footer`
   background-color: #333;
   color: #fff;
-  // margin-top: 20px;
   margin-top: auto;
 `;
 

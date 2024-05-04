@@ -1,6 +1,8 @@
 import React from 'react';
+import useWindowWidth from '../hooks/useWindowWidth';
 
 export default function Container({ children }) {
+  const { isSmallerDevice } = useWindowWidth();
   return (
     <div
       style={{
@@ -10,7 +12,7 @@ export default function Container({ children }) {
         alignItems: 'center',
       }}
     >
-      <div style={{ width: '85%' }}>{children}</div>
+      <div style={{ width: isSmallerDevice ? '95%' : '85%' }}>{children}</div>
     </div>
   );
 }
