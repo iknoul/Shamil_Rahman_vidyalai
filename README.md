@@ -17,3 +17,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [ ] fix overflow issues in home page
 - [ ] set contextAPI to convert global light and dark mode
 - [ ] show user's name and email in each posts and show first letter for first and last name
+      
+     ![Screenshot from 2024-05-04 08-35-47](https://github.com/vidyalai/interview-challenge-1/assets/67904627/a1dd3dca-27e8-427b-a6dc-41de00d15df1)
