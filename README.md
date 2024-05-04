@@ -25,7 +25,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   ![Screenshot from 2024-05-04 08-35-47](https://github.com/vidyalai/interview-challenge-1/assets/67904627/a1dd3dca-27e8-427b-a6dc-41de00d15df1)
 
 - [ ] Convert `UserList` React class component to functional component and convert `witUserData` HOC (Higher order Component) to a custom React hooks
-- [ ] Refactor the `useWindowWidth` hook to ContextAPI. Declare the ContextAPI globally and access the `isSmallerDevice` property.
+- [ ] Convert `useWindowWidth` hook to ContextAPI. Declare the ContextAPI globally and access the `isSmallerDevice` property.
 
 ## Other Evaluation Criteria
 
