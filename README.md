@@ -4,7 +4,7 @@ Step 1: Clone the repository to your local system. Ensure not to fork it.
 
 Step 2: Create a new branch - "your_name_vidyalai" in your local repository for making changes.
 
-Step 3: Install packages
+Step 3: Install packages and make sure you are using Node.js version 18.20 or higher.
 
 ```bash
 npm i

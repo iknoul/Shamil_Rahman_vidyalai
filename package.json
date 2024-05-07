@@ -1,6 +1,9 @@
 {
   "name": "interview-challenge-1",
   "version": "0.1.0",
+  "engines": {
+    "node": ">=18.20"
+  },
   "private": true,
   "scripts": {
     "dev": "nodemon server/index.js",
