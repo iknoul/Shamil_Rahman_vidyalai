@@ -1,18 +1,20 @@
 ## Getting Started
 
-Step 1: Clone this repo in your local  and install the packages
+Step 1: Clone the repository to your local system. Ensure not to fork it.
+Step 2: Create a new branch - "your_name_vidyalai" in your local repository for making changes.
+Step 3: Install packages
 
 ```bash
 npm i
 ```
 
-Step 2: Run the development server:
+Step 4: Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result and complete the tasks mentioned below:
 
 ## TASKS
 
@@ -30,12 +32,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## Submission
-After you have completed your work, submit a single pull request to the main repo. Detail the changes you have made in this PR.
-Note: Do not commit directly to master.
+Create a new public repository in your github account
+Push the changes from your local to the new repo on GitHub.
+Open a pull request from "your_name_vidyalai" to "master"
+Fill [this form](https://docs.google.com/forms/d/e/1FAIpQLSeACdInJitqQ8hncrJdsTYEXVuts0Rb_WlMhLihXz06MTFmwA/viewform) with a link to the pull request 
 
 
-## Other Evaluation Criteria
-
+## Evaluation Criteria
 - Clarity and consistency of naming conventions.
 - Effectiveness of code modularization.
 - Adequacy and robustness of error handling mechanisms.
