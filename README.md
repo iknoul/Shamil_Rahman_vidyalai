@@ -1,12 +1,12 @@
 ## Getting Started
 
-First, install packages
+Step 1: Clone this repo in your local  and install the packages
 
 ```bash
 npm i
 ```
 
-then, run the development server:
+Step 2: Run the development server:
 
 ```bash
 npm run dev
@@ -27,6 +27,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [ ] Convert `UserList` React class component to functional component and convert `witUserData` HOC (Higher order Component) to a custom React hooks
 - [ ] Convert `useWindowWidth` hook to ContextAPI. Declare the ContextAPI globally and access the `isSmallerDevice` property.
 
+
+
+## Submission
+After you have completed your work, submit a single pull request to the main repo. Detail the changes you have made in this PR.
+
+
 ## Other Evaluation Criteria
 
 - Clarity and consistency of naming conventions.
@@ -34,3 +40,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Adequacy and robustness of error handling mechanisms.
 - Efficiency of code optimization techniques.
 - Quality and comprehensiveness of code documentation.
+
+
+
