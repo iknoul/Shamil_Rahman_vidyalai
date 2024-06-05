@@ -89,10 +89,10 @@ const Post = ({ post }) => {
   return (
     <PostContainer>
       <CarouselContainer>
-        <Carousel ref={carouselRef}>
+        <Carousel ref={carouselRef}> 
           {post.images.map((image, index) => (
             <CarouselItem key={index}>
-              <Image src={image.url} alt={post.title} />
+              <Image src={image} alt={post.title} />
             </CarouselItem>
           ))}
         </Carousel>
