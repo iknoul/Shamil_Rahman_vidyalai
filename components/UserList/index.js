@@ -47,7 +47,7 @@ const withUserData = WrappedComponent =>
     };
 
     async componentDidMount() {
-      const { data: users } = await axios.get('/api/v1/users');
+      const { data: users } = await axios.get('/api/v1/users/all');
 
       this.setState({
         users,

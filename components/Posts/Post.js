@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useRef } from 'react';
 import styled from '@emotion/styled';
+import ProfileCard from './ProfileCard';
 
 const PostContainer = styled.div(() => ({
   width: '300px',
@@ -88,7 +89,8 @@ const Post = ({ post }) => {
 
   return (
     <PostContainer>
-      <CarouselContainer>
+      <ProfileCard post={post}/>
+      <CarouselContainer>   
         <Carousel ref={carouselRef}> 
           {post.images.map((image, index) => (
             <CarouselItem key={index}>
