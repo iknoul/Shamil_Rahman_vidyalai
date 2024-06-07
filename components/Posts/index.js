@@ -1,9 +1,9 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 import Post from './Post';
 import Container from '../common/Container';
-import useWindowWidth from '../hooks/useWindowWidth';
+import WindowWidthContext from '../../context/WindowWidthContext';
 
 const PostListContainer = styled.div(() => ({
   display: 'flex',
@@ -38,7 +38,7 @@ export default function Posts() {
   const [pageNumber, setPageNumber] = useState(0)
   const [loadMoreButton, setLoadMoreButton] = useState(true)
 
-  const { isSmallerDevice } = useWindowWidth();
+  const { isSmallerDevice } = useContext(WindowWidthContext);
   
   const handleClick = () => {
     setPageNumber(pageNumber+1)
